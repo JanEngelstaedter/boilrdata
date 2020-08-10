@@ -1,0 +1,14 @@
+Package: boilrdata
+Type: Package
+Title: A package containing various biological data 
+Version: 0.1.0
+Authors@R: person("Engelstaedter", "Jan", email = "j.engelstaedter@uq.edu.au",
+  role = c("aut", "cre"))
+Description: This package is a compilation of various datasets from
+    the School of Biological Sciences at The University of Queensland.
+    The data is being used for the module "R for Biologists", which is 
+    part of the course BIOL7001 "Foundations of Quantitative Biology".
+License: CC0
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.0
