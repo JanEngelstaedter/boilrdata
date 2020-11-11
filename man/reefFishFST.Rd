@@ -3,7 +3,7 @@
 \docType{data}
 \name{reefFishFST}
 \alias{reefFishFST}
-\title{Reef fish FST}
+\title{Reef fish FST data}
 \format{
 A data frame with 114 rows and 12 columns. Each row corresponds to a different species and the most important variables are:
 \describe{

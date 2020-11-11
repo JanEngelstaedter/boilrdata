@@ -15,7 +15,7 @@ A data frame with 12 columns:
   \item{mixID}{For competition experiments, the species identities of the two competing species}
   \item{AA.mM}{Amino acid concentration in mM}
   \item{sucrose}{Sucrose levels, osmotic pressure in percent}
-  \item{timepoint}{Time in minutes}
+  \item{timepoint}{Time in hours}
   \item{CFUs}{Number of yeast cells ("colony-forming units") per uL}
   \item{validity}{Should data be included in analysis?}
   \item{notes}{Notes}
@@ -29,6 +29,6 @@ Letten, A.D. Dhami, M.K., Ke, P.J., T Fukami, T. Species coexistence through sim
 nectarYeast
 }
 \description{
-Data from an experiment investigating competition between nectar yeasts.
+Data from an experiment investigating growth of different nectar yeasts in both monoculture and competition.
 }
 \keyword{datasets}

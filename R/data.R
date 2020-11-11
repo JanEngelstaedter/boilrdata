@@ -60,12 +60,11 @@
 #'
 #' @format A data frame with 55 rows and 6 columns. Each row corresponds to a different family and the variables are:
 #' \describe{
-#'   \item{Family}{Reference number to original article (see source)}
 #'   \item{Phyl_name}{String containing family and species names}
 #'   \item{Spp_rich}{Species richness (number of species within the family)}
-#'   \item{Divergence}{???}
-#'   \item{Egg}{Reproductive strategy with respect to eggs}
-#'   \item{Egg_3}{???}
+#'   \item{Divergence}{Maximum divergence in COI gene (an estimate for crown age)}
+#'   \item{Egg}{Reproductive strategy with respect to eggs, with two states distinguished (pelagic or demersal)}
+#'   \item{Egg_3}{Reproductive strategy with respect to eggs, with three states distinguished (pelagic, demersal or scatterer)}
 #' }
 #' @source Riginos, C., Buckley, Y.M., Blomberg, S.P. & Treml, E.A. 2014.
 #' The American Naturalist 184: 52-64 (2014)
@@ -122,7 +121,7 @@
 
 #' Nectar yeast data
 #'
-#' Data from an experiment investigating competition between nectar yeasts.
+#' Data from an experiment investigating growth of different nectar yeasts in both monoculture and competition.
 #'
 #' @format A data frame with 12 columns:
 #' \describe{
@@ -134,7 +133,7 @@
 #'   \item{mixID}{For competition experiments, the species identities of the two competing species}
 #'   \item{AA.mM}{Amino acid concentration in mM}
 #'   \item{sucrose}{Sucrose levels, osmotic pressure in percent}
-#'   \item{timepoint}{Time in minutes}
+#'   \item{timepoint}{Time in hours}
 #'   \item{CFUs}{Number of yeast cells ("colony-forming units") per uL}
 #'   \item{validity}{Should data be included in analysis?}
 #'   \item{notes}{Notes}
@@ -143,3 +142,45 @@
 #' @source Letten, A.D. Dhami, M.K., Ke, P.J., T Fukami, T. Species coexistence through simultaneous fluctuation-dependent mechanisms. Proceedings of the National Academy of Sciences 115 (26), 6745-6750 (2018).
 #' \url{https://www.pnas.org/content/115/26/6745.full}
 "nectarYeast"
+
+
+#' Oxley seedling survival data
+#'
+#' Data from an experiment investigating tree seedling survival and growth to inform subtropical rainforest restoration efforts
+#'
+#' @format A list containing four data frames:
+#' \describe{
+#'   \item{trees}{}
+#'   \item{soils}{}
+#'   \item{plots}{}
+#'   \item{species}{}
+#' }
+#'
+#' @source Gardiner, R., Shoo, L.P., Dwyer, J.M. Look to seedling heights, rather than functional traits, to explain survival during extreme heat stress in the early stages of subtropical rainforest restoration. Journal of Applied Ecology 56:2687-2697 (2019).
+#' DOI: 10.1111/1365-2664.13505, \url{https://besjournals.onlinelibrary.wiley.com/doi/abs/10.1111/1365-2664.13505}
+"oxley"
+
+
+#' Senecio lautus morphological data
+#'
+#' Data from an experiment where seeds from the Australian wildflower \emph{Senecio lautus} were collected, grown in glasshouses under uniform conditions, and a range of morphological traits measured. The seeds were collected from populations belonging to four distinct ecotypes (dune, headland, tableland and woodland) that may be in the process of forming separate species.
+#'
+#' @format A data frame with the following columns:
+#' \describe{
+#'   \item{Ecotype}{One of four ecotypes (dune, headland, tableland woodland)}
+#'   \item{Population}{Population ID}
+#'   \item{VegHeight}{Vegetative height of the plant, in mm}
+#'   \item{MSL_W}{Ratio between main stem length and mean plant width}
+#'   \item{SB}{Number of branches}
+#'   \item{MSD}{Main stem diameter, in mm}
+#'   \item{Area}{Leaf area, in mm2}
+#'   \item{P2A2}{Leaf perimeter squared / area squared (an indicator of leaf complexity)}
+#'   \item{Circularity}{Leaf circularity}
+#'   \item{Nindents.Peri}{Number of leaf indents divided by leaf perimeter}
+#'   \item{IndentWidth}{Leaf indent width, in mm}
+#'   \item{IndentDepth}{Leaf ndent depth, in mm}
+#' }
+#'
+#' @source Walter, G.M., Aguirre, J.D., Blows, M.W. & Ortiz-Barrientos, D. Evolution of Genetic Variance during Adaptive Radiation. The American Naturalist 191: E108–E128 (2018), \url{https://www.journals.uchicago.edu/doi/10.1086/696123}
+"senecio"
+

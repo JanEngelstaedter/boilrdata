@@ -3,16 +3,15 @@
 \docType{data}
 \name{reefFishDiversity}
 \alias{reefFishDiversity}
-\title{Reef fish diversity}
+\title{Reef fish diversity data}
 \format{
 A data frame with 55 rows and 6 columns. Each row corresponds to a different family and the variables are:
 \describe{
-  \item{Family}{Reference number to original article (see source)}
   \item{Phyl_name}{String containing family and species names}
   \item{Spp_rich}{Species richness (number of species within the family)}
-  \item{Divergence}{???}
-  \item{Egg}{Reproductive strategy with respect to eggs}
-  \item{Egg_3}{???}
+  \item{Divergence}{Maximum divergence in COI gene (an estimate for crown age)}
+  \item{Egg}{Reproductive strategy with respect to eggs, with two states distinguished (pelagic or demersal)}
+  \item{Egg_3}{Reproductive strategy with respect to eggs, with three states distinguished (pelagic, demersal or scatterer)}
 }
 }
 \source{
