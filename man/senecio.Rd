@@ -5,9 +5,9 @@
 \alias{senecio}
 \title{Senecio lautus morphological data}
 \format{
-A data frames  with the following columns:
+A data frame with the following columns:
 \describe{
-  \item{Ecotype}{One of four ecotypes}
+  \item{Ecotype}{One of four ecotypes (dune, headland, tableland woodland)}
   \item{Population}{Population ID}
   \item{VegHeight}{Vegetative height of the plant, in mm}
   \item{MSL_W}{Ratio between main stem length and mean plant width}
